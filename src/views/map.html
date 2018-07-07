@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-9" style="padding-right: 0;">
+    <ng-map center="{{ locationctrl.center }}" zoom="{{ locationctrl.zoom }}" style="height:95vh;">
+      <div ng-repeat="marker in locationctrl.markers">
+              <marker position="{{ marker.latitude }}, {{ marker.longitude }}" on-click="locationctrl.openModal(event, $index)"></marker>
+      </div>
+    </ng-map>
+  </div>
+  <div class="col-md-3" style="padding-left: 0">
+    <table class="table table-hover">
+      <tr ng-repeat="marker in locationctrl.markers">
+          <td ng-click="locationctrl.zoomLocation($index)" style="cursor:pointer">Location {{ $index + 1 }}: {{ marker.name }}</td>
+      </tr>
+    </table>
+    <div>
+      <button ng-click="locationctrl.clearLocation()" class="btn btn-primary center-block">Back</button>
+      {{ locationctrl.selectedMarkerIndex }}
+    </div>
+  </div>
+</div>
+
+
