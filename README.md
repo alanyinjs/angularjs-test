@@ -26,8 +26,8 @@ Alternatively, if `yarn` is installed on your machine, run the following command
 
 ## Results
 - The initial map area with a list of markers showing on the right hand side:
-![Original map area with markers](images/fullmap.png)
+![Original map area with markers](images/fullmap-min.png)
 - The map zooms to the marker when the item on the list is clicked:
-![Map zooming in to the marker](images/up-marker.png)
+![Map zooming in to the marker](images/up-marker-min.png)
 - When the marker is clicked, a dialogue box shows up:
-![Modal showing up](images/modal.png)
+![Modal showing up](images/modal-min.png)
