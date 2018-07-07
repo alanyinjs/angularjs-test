@@ -24,3 +24,10 @@ Alternatively, if `yarn` is installed on your machine, run the following command
 - `yarn install`
 - `yarn start` - This command will run Webpack dev-server on `http://localhost:8080/`
 
+## Results
+- The initial map area with a list of markers showing on the right hand side:
+![Original map area with markers](images/fullmap.png)
+- The map zooms to the marker when the item on the list is clicked:
+![Map zooming in to the marker](images/up-marker.png)
+- When the marker is clicked, a dialogue box shows up:
+![Modal showing up](images/modal.png)
